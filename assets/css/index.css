@@ -1,0 +1,97 @@
+*{
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    color: transparent;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div{
+    display: grid;
+    width: 80vw;
+    height: 80vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 100px 100px 40px 25px 50px;
+    grid-template-areas: "d1 d1 d1 d2 d3 d3"
+                         "d4 d4 d5 d5 d6 d6"
+                         "d4 d4 d5 d5 d7 d8";
+    grid-gap: 10px;
+    
+}
+
+.div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    transition-property: transform, background-color;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+   /*  border: 1px solid black; */
+   
+}
+
+.div > div:hover{
+    transform: scale(1.05);
+    background-color: rgb(196, 196, 196);
+}
+
+.div .d5{
+    color: black;
+}
+
+.d1{
+    grid-area: d1;
+}
+
+.d2{
+    grid-area: d2;
+}
+
+.d3{
+    grid-area: d3;
+}
+.d4{
+    grid-area: d4;
+}
+.d5{
+    grid-column: 3/5;
+    grid-row: 2/5;
+    
+}
+.d6{
+    grid-area: d6;
+}
+.d7{
+    grid-area: d7;
+}
+.d8{
+    grid-area: d8;
+}
+.d9{
+    grid-column: 1/2;
+    grid-row: 5/8;
+}
+.d10{
+    grid-column: 2/3;
+    grid-row: 5/8;
+}
+.d11{
+    grid-column: 3/4;
+    grid-row: 6/8;
+}
+.d12{
+    grid-column: 4/5;
+    grid-row: 6/8;
+}
+.d13{
+    grid-column: 5/7;
+    grid-row: 5/8;
+}
+

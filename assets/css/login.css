@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 98vh;
+    font-family: sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+form{
+    border-radius: 1em;
+    box-shadow: 0px 0px 4px rgb(219, 219, 219);
+    width: 35vw;
+    height: 70vh;
+    padding: 1em 1.5em;
+    display: grid;
+    grid-template-rows: 1fr 5fr 2fr ;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0em; 
+}
+p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(85, 85, 85);
+}
+label{
+    font-size: 1rem;
+    color: rgb(43, 43, 43);
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.input-group-sex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+     width: 95%;
+    margin-left: 1em;
+}
+
+.input-group-sex input{
+    margin-left: 1em;
+    margin-right: 3.5em;
+    width: 1.2em;
+}
+
+input, select{
+    border: 1px solid rgb(219, 219, 219);
+    height: 2.5em;
+    border-radius: 0.6em;
+    padding: 0.5em;
+    width: 95%;
+    margin-left: 1em;
+}
+
+select{
+    height: 3.4em;
+}
+
+input:focus, select:focus{
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1em;
+}
+
+button{
+    width: 100%;
+    height: 3.5em;
+    color: white;
+    background-color: #4281AB;
+    border: none;
+    border-radius: 0.6em;
+    cursor: pointer;
+    transition-property: animation;
+    transition-delay: 0s;
+    transition: 0s;
+    animation: transition 500ms initial 0s normal normal backwards;
+}
+
+button:hover{
+    animation: transitionStart 500ms initial 0s normal normal backwards;
+}
+
+@keyframes transitionStart{
+    0%{
+        background: linear-gradient(45deg, rgb(4, 31, 90), rgb(4, 31, 90), rgb(4, 31, 90),rgb(4, 31, 90));
+    }
+    25%{
+         background: linear-gradient(45deg, rgb(4, 31, 90), rgb(92, 99, 161), rgb(92, 99, 161), rgb(92, 99, 161));
+    }
+    50%{
+         background: linear-gradient(45deg, rgb(92, 99, 161),  rgb(4, 31, 90), rgb(92, 99, 161), rgb(92, 99, 161));
+    }
+    75%{
+         background: linear-gradient(45deg, rgb(4, 31, 90), rgb(92, 99, 161), rgb(4, 31, 90), rgb(92, 99, 161));
+    }
+    100%{
+         background: linear-gradient(45deg, rgb(4, 31, 90), rgb(4, 31, 90), rgb(92, 99, 161), rgb(92, 99, 161));
+    }
+    
+}
